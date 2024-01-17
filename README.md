@@ -6,7 +6,7 @@
 
 #### Ссылка на страницу сайта:
 
-+ ![image](https://github.com/ParamonovIvan/3D-Scroll_Website/assets/131868856/af3ee7f2-ed3e-4a9c-8e45-e76cda4aa3cc)
++ https://paramonovivan.github.io/3D-Scroll_Website/
 
 #### Внешний вид страницы сайта:
 
