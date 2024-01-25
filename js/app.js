@@ -10,6 +10,8 @@ window.onscroll = function() {
 	    delta = lastPos - top;
 
   lastPos = top;
+
+  zVals = zVals.slice(0, frames.length);
 	
   frames.forEach(function(n, i) {
     zVals.push((i * zSpacing) + zSpacing)
