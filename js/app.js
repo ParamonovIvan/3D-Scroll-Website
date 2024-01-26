@@ -1,13 +1,13 @@
 let zSpacing = -1000,
-  lastPos = zSpacing / 5,
-  $frames = document.getElementsByClassName('frame'),
-  frames = Array.from($frames),
-  zVals = [];
+    lastPos = zSpacing / 5,
+    $frames = document.getElementsByClassName('frame'),
+    frames = Array.from($frames),
+    zVals = [];
 
 window.onscroll = function() {
 
   let top = document.documentElement.scrollTop,
-	    delta = lastPos - top;
+      delta = lastPos - top;
 
   lastPos = top;
 
@@ -15,8 +15,8 @@ window.onscroll = function() {
     zVals.push((i * zSpacing) + zSpacing)
     zVals[i] += delta * -5.5
     let frame = frames[i],
-		transform = `translateZ(${zVals[i]}px)`,
-		opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
+	transform = `translateZ(${zVals[i]}px)`,
+	opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
     frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`)
   })
 }
@@ -24,7 +24,7 @@ window.onscroll = function() {
 window.scrollTo(0, 1)
 
 let soundButton = document.querySelector('.soundbutton'),
-                  audio = document.querySelector('.audio')
+    audio = document.querySelector('.audio')
 
 soundButton.addEventListener('click', e => {
   soundButton.classList.toggle('paused')
